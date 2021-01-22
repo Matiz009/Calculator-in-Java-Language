@@ -5,6 +5,7 @@ public class TestCalculator {
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);
         Calculator calculate=new Calculator();
+		while(true){
         System.out.println("Press 1 to add numbers");
         System.out.println("Press 2 to subtract numbers");
         System.out.println("Press 3 to multiply numbers");
@@ -43,6 +44,7 @@ public class TestCalculator {
 
                     }
                     default -> System.exit(0);
+				
 
 
                 }
@@ -50,6 +52,9 @@ public class TestCalculator {
                 System.out.println(exp.getMessage());
                 System.out.println("Please provide a valid Input");
             }
+			
         }
+		
+	}
 
 }
